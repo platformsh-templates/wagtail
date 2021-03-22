@@ -13,6 +13,7 @@ type: 'python:3.8'
 dependencies:
     python3:
        pipenv: '2018.10.13'
+       virtualenvwrapper: '4.8.4'
 
 # The relationships of the application with services or other applications.
 #
@@ -30,7 +31,10 @@ web:
         socket_family: unix
     # Commands are run once after deployment to start the application process.
     commands:
-        start: "gunicorn -w 4 -b unix:$SOCKET myapp.wsgi:application"
+        start: |
+            echo "--------------------------------------------------"
+            gunicorn -w 4 -b unix:$SOCKET myapp.wsgi:application
+        # start: ./manage.py runserver $PORT
     locations:
         "/":
             passthru: true
@@ -55,7 +59,7 @@ hooks:
   build: |
     pipenv install --system --deploy
     mkdir logs
-    python manage.py collectstatic
+    ./manage.py collectstatic
     rm -rf logs
   deploy: |
-    python manage.py migrate
+    ./manage.py migrate
