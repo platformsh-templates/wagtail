@@ -7,12 +7,12 @@
 name: 'app'
 
 # The runtime the application uses.
-type: 'python:3.8'
+type: 'python:3.9'
 
 # The build-time dependencies of the app.
 dependencies:
     python3:
-       pipenv: '2018.10.13'
+       pipenv: '2022.1.8'
 
 # The relationships of the application with services or other applications.
 #
@@ -59,3 +59,10 @@ hooks:
     rm -rf logs
   deploy: |
     python manage.py migrate
+
+source:
+  operations:
+    auto-update:
+      command: |
+        curl -fsS https://raw.githubusercontent.com/platformsh/source-operations/main/setup.sh | { bash /dev/fd/3 sop-autoupdate; } 3<&0
+    
