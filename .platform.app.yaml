@@ -46,12 +46,6 @@ web:
 # The size of the persistent disk of the application (in MB).
 disk: 512
 
-# Set a local R/W mount for SQLite
-mounts:
-    'database':
-        source: local
-        source_path: database
-
 # The hooks executed at various points in the lifecycle of the application.
 hooks:
   # The build hook runs before the application is deployed, and is useful for
