@@ -7,7 +7,7 @@
 name: 'app'
 
 # The runtime the application uses.
-type: 'python:3.9'
+type: 'python:3.11'
 
 # The build-time dependencies of the app.
 dependencies:
@@ -53,7 +53,11 @@ hooks:
   # The build hook runs before the application is deployed, and is useful for
   # assembling the codebase.
   build: |
+    # Download the latest version of pip
+    python3.10 -m pip install --upgrade pip
+    # Install dependencies
     pipenv install --deploy
+    # Collect static assets
     pipenv run python manage.py collectstatic
   deploy: |
     pipenv run python manage.py migrate
