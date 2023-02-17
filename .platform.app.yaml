@@ -14,9 +14,9 @@ dependencies:
     python3:
        pipenv: '2023.2.4'
 
-# variables:
-#     env:
-#         DJANGO_SETTINGS_MODULE: "myapp.settings.production"
+variables:
+    env:
+        DJANGO_SETTINGS_MODULE: "myapp.settings.production"
 
 # The relationships of the application with services or other applications.
 #
