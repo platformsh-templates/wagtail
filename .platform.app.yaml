@@ -42,11 +42,11 @@ web:
 # The size of the persistent disk of the application (in MB).
 disk: 512
 
-# Set a local R/W mount for logs
+# Set a local R/W mount for SQLite
 mounts:
-    'logs':
+    'database':
         source: local
-        source_path: logs
+        source_path: database
 
 # The hooks executed at various points in the lifecycle of the application.
 hooks:
@@ -54,9 +54,7 @@ hooks:
   # assembling the codebase.
   build: |
     pipenv install --deploy
-    mkdir logs
     pipenv run python manage.py collectstatic
-    rm -rf logs
   deploy: |
     pipenv run python manage.py migrate
 
@@ -65,4 +63,3 @@ source:
     auto-update:
       command: |
         curl -fsS https://raw.githubusercontent.com/platformsh/source-operations/main/setup.sh | { bash /dev/fd/3 sop-autoupdate; } 3<&0
-    
