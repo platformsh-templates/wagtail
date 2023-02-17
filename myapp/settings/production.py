@@ -38,10 +38,6 @@ def decode(variable):
     except json.decoder.JSONDecodeError:
         print('Error decoding JSON, code %d', json.decoder.JSONDecodeError)
 
-python -c 'import os, json, base64; routes = json.loads(base64.b64decode(os.getenv("PLATFORM_ROUTES")).decode("utf-8")); print(routes); primary_route = [e for e in routes if e["primary"] == True]; print(primary_route)'
-
-primary_route = [e for e in routes if e['primary'] == True]; print(primary_route)
-
 # Import some Platform.sh settings from the environment.
 if (os.getenv('PLATFORM_APPLICATION_NAME') is not None):
 
