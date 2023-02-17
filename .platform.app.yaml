@@ -24,7 +24,7 @@ dependencies:
 # to the application in the PLATFORM_RELATIONSHIPS variable. The right-hand
 # side is in the form `<service name>:<endpoint name>`.
 relationships:
-    database: "db:postgresql"
+    database: "dbpostgres:postgresql"
 
 # The configuration of app when it is exposed to the web.
 web:
@@ -58,7 +58,7 @@ hooks:
   # assembling the codebase.
   build: |
     # Download the latest version of pip
-    python3.10 -m pip install --upgrade pip
+    python3.11 -m pip install --upgrade pip
     # Install dependencies
     pipenv install --deploy
     # Collect static assets
