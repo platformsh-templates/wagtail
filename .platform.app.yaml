@@ -7,12 +7,16 @@
 name: 'app'
 
 # The runtime the application uses.
-type: 'python:3.9'
+type: 'python:3.11'
 
 # The build-time dependencies of the app.
 dependencies:
     python3:
-       pipenv: '2022.1.8'
+       pipenv: '2023.2.4'
+
+variables:
+    env:
+        DJANGO_SETTINGS_MODULE: "myapp.settings.production"
 
 # The relationships of the application with services or other applications.
 #
@@ -20,7 +24,7 @@ dependencies:
 # to the application in the PLATFORM_RELATIONSHIPS variable. The right-hand
 # side is in the form `<service name>:<endpoint name>`.
 relationships:
-    database: "db:postgresql"
+    database: "dbpostgres:postgresql"
 
 # The configuration of app when it is exposed to the web.
 web:
@@ -42,21 +46,17 @@ web:
 # The size of the persistent disk of the application (in MB).
 disk: 512
 
-# Set a local R/W mount for logs
-mounts:
-    'logs':
-        source: local
-        source_path: logs
-
 # The hooks executed at various points in the lifecycle of the application.
 hooks:
   # The build hook runs before the application is deployed, and is useful for
   # assembling the codebase.
   build: |
-    pipenv install --system --deploy
-    mkdir logs
+    # Download the latest version of pip
+    python3.11 -m pip install --upgrade pip
+    # Install dependencies
+    pipenv install --deploy
+    # Collect static assets
     pipenv run python manage.py collectstatic
-    rm -rf logs
   deploy: |
     pipenv run python manage.py migrate
 
@@ -65,4 +65,3 @@ source:
     auto-update:
       command: |
         curl -fsS https://raw.githubusercontent.com/platformsh/source-operations/main/setup.sh | { bash /dev/fd/3 sop-autoupdate; } 3<&0
-    
