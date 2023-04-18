@@ -171,11 +171,11 @@
         },
         "django-treebeard": {
             "hashes": [
-                "sha256:84ab35040277d524eb77939e235568c9c856cb523cc9655793b66fe9a3ef468b",
-                "sha256:89bc79a7d9ae62e8071ff1f866c83b1484c408d6082ce11cf3eca689240712f6"
+                "sha256:787117995ff985d98e6c2b241ef6b9d37fe8ff7051cd7535c283616a0b5b2645",
+                "sha256:c751a3f924158c288fea89afc25a7151979faf01bf11fdc7be3b858099dfa56d"
             ],
             "markers": "python_version >= '3.8'",
-            "version": "==4.6.1"
+            "version": "==4.7"
         },
         "djangorestframework": {
             "hashes": [
@@ -420,11 +420,11 @@
         },
         "sqlparse": {
             "hashes": [
-                "sha256:0323c0ec29cd52bceabc1b4d9d579e311f3e4961b98d174201d5622a23b85e34",
-                "sha256:69ca804846bb114d2ec380e4360a8a340db83f0ccf3afceeb1404df028f57268"
+                "sha256:5430a4fe2ac7d0f93e66f1efc6e1338a41884b7ddf2a350cedd20ccc4d9d28f3",
+                "sha256:d446183e84b8349fa3061f0fe7f06ca94ba65b426946ffebe6e3e8295332420c"
             ],
             "markers": "python_version >= '3.5'",
-            "version": "==0.4.3"
+            "version": "==0.4.4"
         },
         "telepath": {
             "hashes": [
