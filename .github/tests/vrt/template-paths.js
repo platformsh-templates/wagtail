@@ -31,7 +31,7 @@ scenarioPaths.paths = [
     },
     {
         "label": "Home",
-        "removeSelectors": ["egg"]
+        "removeSelectors": [".egg"]
     },
 ];
 
