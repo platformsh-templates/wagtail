@@ -12,7 +12,7 @@ type: 'python:3.11'
 # The build-time dependencies of the app.
 dependencies:
     python3:
-       pipenv: '2023.2.4'
+       pipenv: '*'
 
 variables:
     env:
