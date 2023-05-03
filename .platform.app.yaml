@@ -51,13 +51,15 @@ hooks:
   # The build hook runs before the application is deployed, and is useful for
   # assembling the codebase.
   build: |
-    # Download the latest version of pip
-    python3.11 -m pip install --upgrade pip
-    # Install dependencies
-    printf "\nStart\n"
+    # Setup the virtualenv
     pipenv --python 3.11
+    
+    # Download the latest version of pip
+    pipenv run python -m pip install --upgrade pip
+    
+    # Install dependencies
     pipenv install --deploy
-    printf "\nEnd\n"
+    
     # Collect static assets
     pipenv run python manage.py collectstatic
   deploy: |

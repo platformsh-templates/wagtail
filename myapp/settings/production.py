@@ -19,7 +19,7 @@ import base64
 #   configured in .platform.app.yaml.
 PLATFORMSH_DB_RELATIONSHIP="database"
 
-# Helper function for decoding base64-encoded JSON variables.
+# Helper functåion for decoding base64-encoded JSON variables.
 def decode(variable):
     """Decodes a Platform.sh environment variable.
     Args:
