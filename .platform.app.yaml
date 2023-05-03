@@ -55,6 +55,7 @@ hooks:
     python3.11 -m pip install --upgrade pip
     # Install dependencies
     printf "\nStart\n"
+    pipenv --python 3.11
     pipenv install --deploy
     printf "\nEnd\n"
     # Collect static assets
