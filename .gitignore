@@ -112,4 +112,3 @@ dmypy.json
 
 # Ignore mounts
 logs/
-old
