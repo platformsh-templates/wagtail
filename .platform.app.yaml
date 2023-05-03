@@ -54,7 +54,9 @@ hooks:
     # Download the latest version of pip
     python3.11 -m pip install --upgrade pip
     # Install dependencies
+    printf "\nStart\n"
     pipenv install --deploy
+    printf "\nEnd\n"
     # Collect static assets
     pipenv run python manage.py collectstatic
   deploy: |
