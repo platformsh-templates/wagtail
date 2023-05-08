@@ -12,7 +12,7 @@ type: 'python:3.11'
 # The build-time dependencies of the app.
 dependencies:
     python3:
-       pipenv: '2023.2.4'
+       pipenv: '*'
 
 variables:
     env:
@@ -51,10 +51,15 @@ hooks:
   # The build hook runs before the application is deployed, and is useful for
   # assembling the codebase.
   build: |
+    # Setup the virtualenv
+    pipenv --python 3.11
+    
     # Download the latest version of pip
-    python3.11 -m pip install --upgrade pip
+    pipenv run python -m pip install --upgrade pip
+    
     # Install dependencies
     pipenv install --deploy
+    
     # Collect static assets
     pipenv run python manage.py collectstatic
   deploy: |
