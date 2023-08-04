@@ -474,11 +474,11 @@
         },
         "willow": {
             "hashes": [
-                "sha256:b7a4909110133fdb1e2287592e0673cc255e0286e1cd53427ee68df1c9220c4c",
-                "sha256:ffb95732d4729d1a3478407f697b623467d6ebd1da77e0d44c1016bc69825711"
+                "sha256:99544e82b088cc36c63df24738aad4e701d927116146a83a8cd0f9d2ba6f853d",
+                "sha256:df76e3859993e02cc4f7f8930e1f383c42af11e67fff36671a10893c02a808c9"
             ],
             "markers": "python_version >= '3.7'",
-            "version": "==1.5.1"
+            "version": "==1.5.2"
         }
     },
     "develop": {}
