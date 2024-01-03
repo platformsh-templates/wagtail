@@ -171,11 +171,11 @@
         },
         "django-modelcluster": {
             "hashes": [
-                "sha256:3b1791638046c73ae7415327cf54bfa0adad9d89d342a5b86d0ec29a2504e067",
-                "sha256:8ce72635db4b90b34993afda5021ed8676ef94f1d4c607466d0f8d3f676c5b64"
+                "sha256:0dc39ee2a32dd20682a26469656ae940b76034e6c24630f5c28b7f2b1cbef57d",
+                "sha256:5a0e2feb2c9ea4407906ce2fbf507e89b9789ab3c4caabfd34ea84aad986f7f4"
             ],
             "markers": "python_version >= '3.8'",
-            "version": "==6.1"
+            "version": "==6.2"
         },
         "django-permissionedforms": {
             "hashes": [
