@@ -195,11 +195,11 @@
         },
         "django-treebeard": {
             "hashes": [
-                "sha256:787117995ff985d98e6c2b241ef6b9d37fe8ff7051cd7535c283616a0b5b2645",
-                "sha256:c751a3f924158c288fea89afc25a7151979faf01bf11fdc7be3b858099dfa56d"
+                "sha256:846e462904b437155f76e04907ba4e48480716855f88b898df4122bdcfbd6e98",
+                "sha256:995c7120153ab999898fe3043bbdcd8a0fc77cc106eb94de7350e9d02c885135"
             ],
             "markers": "python_version >= '3.8'",
-            "version": "==4.7"
+            "version": "==4.7.1"
         },
         "djangorestframework": {
             "hashes": [
@@ -481,11 +481,11 @@
         },
         "urllib3": {
             "hashes": [
-                "sha256:55901e917a5896a349ff771be919f8bd99aff50b79fe58fec595eb37bbc56bb3",
-                "sha256:df7aa8afb0148fa78488e7899b2c59b5f4ffcfa82e6c54ccb9dd37c1d7b52d54"
+                "sha256:051d961ad0c62a94e50ecf1af379c3aba230c66c710493493560c0c223c49f20",
+                "sha256:ce3711610ddce217e6d113a2732fafad960a03fd0318c91faa79481e35c11224"
             ],
             "markers": "python_version >= '3.8'",
-            "version": "==2.1.0"
+            "version": "==2.2.0"
         },
         "wagtail": {
             "hashes": [
