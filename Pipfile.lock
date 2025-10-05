@@ -26,11 +26,11 @@
         },
         "asgiref": {
             "hashes": [
-                "sha256:0b61526596219d70396548fc003635056856dba5d0d086f86476f10b33c75960",
-                "sha256:a0249afacb66688ef258ffe503528360443e2b9a8d8c4581b6ebefa58c841ef1"
+                "sha256:aef8a81283a34d0ab31630c9b7dfe70c812c95eba78171367ca8745e88124734",
+                "sha256:d89f2d8cd8b56dada7d52fa7dc8075baa08fb836560710d38c292a7a3f78c04e"
             ],
             "markers": "python_version >= '3.9'",
-            "version": "==3.9.2"
+            "version": "==3.10.0"
         },
         "beautifulsoup4": {
             "hashes": [
@@ -42,11 +42,11 @@
         },
         "certifi": {
             "hashes": [
-                "sha256:e564105f78ded564e3ae7c923924435e1daa7463faeab5bb932bc53ffae63407",
-                "sha256:f6c12493cfb1b06ba2ff328595af9350c65d6644968e5d3a2ffd78699af217a5"
+                "sha256:0f212c2744a9bb6de0c56639a6f68afe01ecd92d91f14ae897c4fe7bbeeef0de",
+                "sha256:47c09d31ccf2acf0be3f701ea53595ee7e0b8fa08801c6624be771df09ae7b43"
             ],
             "markers": "python_version >= '3.7'",
-            "version": "==2025.8.3"
+            "version": "==2025.10.5"
         },
         "charset-normalizer": {
             "hashes": [
