@@ -218,11 +218,11 @@
         },
         "django-treebeard": {
             "hashes": [
-                "sha256:846e462904b437155f76e04907ba4e48480716855f88b898df4122bdcfbd6e98",
-                "sha256:995c7120153ab999898fe3043bbdcd8a0fc77cc106eb94de7350e9d02c885135"
+                "sha256:61b8076b576107da21f6f6040774c0d17025200c2efdb70dd1f14b18c9206c3a",
+                "sha256:ecaa7a0bbfa86a48fc91ff335513e83c841cdfe1add6229d04ac7096198d5d51"
             ],
-            "markers": "python_version >= '3.8'",
-            "version": "==4.7.1"
+            "markers": "python_version >= '3.10'",
+            "version": "==4.8.0"
         },
         "djangorestframework": {
             "hashes": [
